@@ -1,0 +1,11 @@
+.DS_Store
+tmp
+devel/**/tmp
+fh-data
+dist/
+build/
+firehose.yml
+firehose-*.yml
+.vscode/
+graphnode-data/data/
+graphnode-data/logs/graphnode.log
