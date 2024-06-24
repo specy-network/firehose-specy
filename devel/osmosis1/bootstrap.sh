@@ -93,6 +93,9 @@ edit_genesis () {
 
     # Update concentrated-liquidity (enable pool creation)
     dasel put bool -f $GENESIS '.app_state.concentratedliquidity.params.is_permissionless_pool_creation_enabled' true
+
+    # Update ica allow_message
+    dasel put string -f $GENESIS '.app_state.interchainaccounts.host_genesis_state.params.allow_messages.[0]' "*"
 }
 
 add_genesis_accounts () {
